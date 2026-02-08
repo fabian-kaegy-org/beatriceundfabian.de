@@ -29,6 +29,15 @@ jobs:
           node-version-file: .nvmrc
           cache: "npm"
 
+      - name: Install Composer Dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Install Composer Dependencies for Theme
+        run: composer install --no-dev --optimize-autoloader --working-dir=themes/firefly-theme
+
+      - name: Install Composer Dependencies for Plugin
+        run: composer install --no-dev --optimize-autoloader --working-dir=mu-plugins/firefly-plugin
+
       - name: Install NPM Dependencies
         run: npm install
 
