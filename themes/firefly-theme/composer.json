@@ -1,0 +1,31 @@
+{
+  "name": "fabian-kaegy-org/firefly-theme",
+  "type": "wordpress-theme",
+  "authors": [
+    {
+      "name": "Fabian & Beatrice",
+      "email": "hochzeit@beatriceundfabian.de"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "10up/wp-framework": "~1.3.1"
+  },
+  "require-dev": {
+    "10up/phpcs-composer": "dev-trunk"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
+  },
+  "autoload": {
+    "psr-4": {
+      "FireflyTheme\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
