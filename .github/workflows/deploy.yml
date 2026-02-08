@@ -47,13 +47,12 @@ jobs:
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
-          # Private Key
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOYMENT_PRIVATE_SSH_KEY }}
-          # Remote host
           REMOTE_HOST: ${{ secrets.DEPLOYMENT_SERVER_IP }}
-          # Remote user
           REMOTE_USER: ${{ secrets.DEPLOYMENT_SSH_USERNAME }}
-          # Target directory in the format of `sites/${domain}/files/wp-content/...`
           TARGET: ${{ vars.DEPLOYMENT_TARGET_FOLDER }}
-          # An array of folder to exclude
           EXCLUDE: /node_modules/, /.git/
+          SCRIPT_BEFORE: |
+            echo "Target: ${{ vars.DEPLOYMENT_TARGET_FOLDER }}"
+            ls -la ${{ vars.DEPLOYMENT_TARGET_FOLDER }}
+          SCRIPT_BEFORE_REQUIRED: "true"
