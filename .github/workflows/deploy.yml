@@ -52,11 +52,3 @@ jobs:
           REMOTE_USER: ${{ secrets.DEPLOYMENT_SSH_USERNAME }}
           TARGET: ${{ vars.DEPLOYMENT_TARGET_FOLDER }}
           EXCLUDE: /node_modules/, /.git/
-          SCRIPT_BEFORE: |
-            echo "Home: $HOME"
-            echo "User: $(whoami)"
-            ls -la ~/
-            ls -la ~/sites/ || true
-            ls -la ~/sites/beatriceundfabian.de/ || true
-            ls -la ~/sites/beatriceundfabian.de/files/ || true
-          SCRIPT_BEFORE_REQUIRED: "true"
