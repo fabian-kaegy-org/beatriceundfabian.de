@@ -4,47 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09b02c114ed7582de7d41ae71a561759",
-    "packages": [],
-    "packages-dev": [
-        {
-            "name": "10up/phpcs-composer",
-            "version": "3.0.0-RC2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/10up/phpcs-composer.git",
-                "reference": "e0c395d932f1a2b9d91126e8b1678598e4af8877"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/10up/phpcs-composer/zipball/e0c395d932f1a2b9d91126e8b1678598e4af8877",
-                "reference": "e0c395d932f1a2b9d91126e8b1678598e4af8877",
-                "shasum": ""
-            },
-            "require-dev": {
-                "automattic/vipwpcs": "^3.0",
-                "dealerdirect/phpcodesniffer-composer-installer": "*",
-                "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
-                "phpcompatibility/phpcompatibility-wp": "^2"
-            },
-            "type": "phpcodesniffer-standard",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "10up",
-                    "homepage": "https://10up.com/"
-                }
-            ],
-            "description": "10up's PHP CodeSniffer Ruleset",
-            "support": {
-                "issues": "https://github.com/10up/phpcs-composer/issues",
-                "source": "https://github.com/10up/phpcs-composer/tree/3.0.0-RC2"
-            },
-            "time": "2023-11-15T18:25:18+00:00"
-        },
+    "content-hash": "39d11bae1f0b2ca3e6e6cd153a9fe0be",
+    "packages": [
         {
             "name": "composer/installers",
             "version": "v2.3.0",
@@ -190,6 +151,64 @@
                 }
             ],
             "time": "2024-06-24T20:46:46+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/restricted-site-access",
+            "version": "7.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/restricted-site-access/",
+                "reference": "tags/7.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/restricted-site-access.7.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/restricted-site-access/"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "10up/phpcs-composer",
+            "version": "3.0.0-RC2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/10up/phpcs-composer.git",
+                "reference": "e0c395d932f1a2b9d91126e8b1678598e4af8877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/phpcs-composer/zipball/e0c395d932f1a2b9d91126e8b1678598e4af8877",
+                "reference": "e0c395d932f1a2b9d91126e8b1678598e4af8877",
+                "shasum": ""
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "^3.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
+                "phpcompatibility/phpcompatibility-wp": "^2"
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "https://10up.com/"
+                }
+            ],
+            "description": "10up's PHP CodeSniffer Ruleset",
+            "support": {
+                "issues": "https://github.com/10up/phpcs-composer/issues",
+                "source": "https://github.com/10up/phpcs-composer/tree/3.0.0-RC2"
+            },
+            "time": "2023-11-15T18:25:18+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
